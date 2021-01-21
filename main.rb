@@ -14,5 +14,7 @@ print "Enter your paragraph: "
 string02 = gets.chomp # user input paragraph
 puts "Your paragraph has #{string02.scan(/[^\.!?]+[\.!?]/).map(&:strip).count} sentences."
 
+puts "Your paragraph has #{string02.split.size} words."
+
 puts "Your paragraph backwards is:"
 puts string02.split.reverse.join(" ")
